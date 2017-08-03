@@ -15,6 +15,7 @@
 		64BF2F381F32B60A00282718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64BF2F361F32B60A00282718 /* LaunchScreen.storyboard */; };
 		64BF2F431F32B60A00282718 /* SearchPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF2F421F32B60A00282718 /* SearchPracticeTests.swift */; };
 		64BF2F4E1F32B60A00282718 /* SearchPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF2F4D1F32B60A00282718 /* SearchPracticeUITests.swift */; };
+		64BF2F5C1F32BAEA00282718 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF2F5B1F32BAEA00282718 /* ViewControllerExtensions.swift */; };
 		70D386F054D4C9D32FF60407 /* Pods_SearchPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA6F9AFB8BCCDEA60FEC6ED /* Pods_SearchPractice.framework */; };
 		9A910E0CAEF8081DB5234368 /* Pods_SearchPracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CBA7E05CB83B22C25ED665 /* Pods_SearchPracticeTests.framework */; };
 		E82D226CCB97DA6339E710B5 /* Pods_SearchPracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316EF59AF760C9C08F865FB7 /* Pods_SearchPracticeUITests.framework */; };
@@ -56,6 +57,7 @@
 		64BF2F491F32B60A00282718 /* SearchPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64BF2F4D1F32B60A00282718 /* SearchPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPracticeUITests.swift; sourceTree = "<group>"; };
 		64BF2F4F1F32B60A00282718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64BF2F5B1F32BAEA00282718 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		6DA6F9AFB8BCCDEA60FEC6ED /* Pods_SearchPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A24362F1A8B2597E9CEAC8 /* Pods-SearchPracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchPracticeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchPracticeTests/Pods-SearchPracticeTests.release.xcconfig"; sourceTree = "<group>"; };
 		A3F5EEBC9BC149A3A49CE258 /* Pods-SearchPracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchPracticeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchPracticeTests/Pods-SearchPracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				64BF2F2A1F32B60A00282718 /* AppDelegate.swift */,
 				64BF2F2C1F32B60A00282718 /* ViewController.swift */,
+				64BF2F5B1F32BAEA00282718 /* ViewControllerExtensions.swift */,
 				64BF2F2E1F32B60A00282718 /* Main.storyboard */,
 				64BF2F341F32B60A00282718 /* Assets.xcassets */,
 				64BF2F361F32B60A00282718 /* LaunchScreen.storyboard */,
@@ -319,7 +322,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearchPractice/Pods-SearchPractice-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SearchPractice/Pods-SearchPractice-resources.sh\"\n\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
 			showEnvVarsInLog = 0;
 		};
 		66B115206C6111443E52C623 /* [CP] Embed Pods Frameworks */ = {
@@ -449,6 +452,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64BF2F5C1F32BAEA00282718 /* ViewControllerExtensions.swift in Sources */,
 				64BF2F331F32B60A00282718 /* SearchPractice.xcdatamodeld in Sources */,
 				64BF2F2D1F32B60A00282718 /* ViewController.swift in Sources */,
 				64BF2F2B1F32B60A00282718 /* AppDelegate.swift in Sources */,
@@ -702,6 +706,7 @@
 				64BF2F541F32B60A00282718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64BF2F551F32B60A00282718 /* Build configuration list for PBXNativeTarget "SearchPracticeTests" */ = {
 			isa = XCConfigurationList;
@@ -710,6 +715,7 @@
 				64BF2F571F32B60A00282718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		64BF2F581F32B60A00282718 /* Build configuration list for PBXNativeTarget "SearchPracticeUITests" */ = {
 			isa = XCConfigurationList;
@@ -718,6 +724,7 @@
 				64BF2F5A1F32B60A00282718 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
