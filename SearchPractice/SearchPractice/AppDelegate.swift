@@ -25,7 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window!.backgroundColor = UIColor.white
 
         // 設置根視圖控制器
-        self.window!.rootViewController = ViewController();
+        // 設置根視圖控制器
+        let nav = UINavigationController(
+            rootViewController: ViewController())
+        self.window!.rootViewController = nav
 
         // 將 UIWindow 設置為可見的
         self.window!.makeKeyAndVisible()
