@@ -16,6 +16,7 @@
 		64BF2F4E1F32B60A00282718 /* SearchPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF2F4D1F32B60A00282718 /* SearchPracticeUITests.swift */; };
 		64BF2F5C1F32BAEA00282718 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF2F5B1F32BAEA00282718 /* ViewControllerExtensions.swift */; };
 		64BF2F5E1F32BEB800282718 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF2F5D1F32BEB800282718 /* WebViewController.swift */; };
+		64BF2F601F32CDD300282718 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BF2F5F1F32CDD300282718 /* WKWebViewController.swift */; };
 		70D386F054D4C9D32FF60407 /* Pods_SearchPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA6F9AFB8BCCDEA60FEC6ED /* Pods_SearchPractice.framework */; };
 		9A910E0CAEF8081DB5234368 /* Pods_SearchPracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41CBA7E05CB83B22C25ED665 /* Pods_SearchPracticeTests.framework */; };
 		E82D226CCB97DA6339E710B5 /* Pods_SearchPracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 316EF59AF760C9C08F865FB7 /* Pods_SearchPracticeUITests.framework */; };
@@ -58,6 +59,7 @@
 		64BF2F4F1F32B60A00282718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64BF2F5B1F32BAEA00282718 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		64BF2F5D1F32BEB800282718 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		64BF2F5F1F32CDD300282718 /* WKWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		6DA6F9AFB8BCCDEA60FEC6ED /* Pods_SearchPractice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SearchPractice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90A24362F1A8B2597E9CEAC8 /* Pods-SearchPracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchPracticeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SearchPracticeTests/Pods-SearchPracticeTests.release.xcconfig"; sourceTree = "<group>"; };
 		A3F5EEBC9BC149A3A49CE258 /* Pods-SearchPracticeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SearchPracticeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SearchPracticeTests/Pods-SearchPracticeTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				64BF2F391F32B60A00282718 /* Info.plist */,
 				64BF2F311F32B60A00282718 /* SearchPractice.xcdatamodeld */,
 				64BF2F5D1F32BEB800282718 /* WebViewController.swift */,
+				64BF2F5F1F32CDD300282718 /* WKWebViewController.swift */,
 			);
 			path = SearchPractice;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				64BF2F5C1F32BAEA00282718 /* ViewControllerExtensions.swift in Sources */,
 				64BF2F331F32B60A00282718 /* SearchPractice.xcdatamodeld in Sources */,
 				64BF2F2D1F32B60A00282718 /* ViewController.swift in Sources */,
+				64BF2F601F32CDD300282718 /* WKWebViewController.swift in Sources */,
 				64BF2F5E1F32BEB800282718 /* WebViewController.swift in Sources */,
 				64BF2F2B1F32B60A00282718 /* AppDelegate.swift in Sources */,
 			);

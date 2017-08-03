@@ -142,7 +142,7 @@ class WebViewController: UIViewController, UITextFieldDelegate, UIWebViewDelegat
         myActivityIndicator.center = CGPoint(
             x: fullScreenSize.width * 0.5,
             y: fullScreenSize.height * 0.5)
-        self.view.addSubview(myActivityIndicator);
+        self.view.addSubview(myActivityIndicator) ;
 
         // 先讀取一次網址
         self.go()

@@ -29,8 +29,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "首頁"
-
         // 底色
         self.view.backgroundColor = UIColor.darkGray
 
@@ -38,8 +36,7 @@ class ViewController: UIViewController {
         self.title = "首頁"
 
         // 導覽列底色
-        self.navigationController?.navigationBar.barTintColor =
-            UIColor.lightGray
+        self.navigationController?.navigationBar.barTintColor = UIColor.orange
 
         // 導覽列是否半透明
         self.navigationController?.navigationBar.isTranslucent = false
@@ -55,23 +52,12 @@ class ViewController: UIViewController {
 
         // 導覽列右邊按鈕
         let rightButton = UIBarButtonItem(
-            title:"設定",
+            title:"網站",
             style:.plain,
             target:self,
             action:#selector(ViewController.goWebView))
         // 加到導覽列中
         self.navigationItem.rightBarButtonItem = rightButton
-
-//        // 建立一個按鈕
-//        let myButton = UIButton(frame: CGRect(
-//            x: 0, y: 0, width: 120, height: 40))
-//        myButton.setTitle("Article", for: .normal)
-//        myButton.backgroundColor = UIColor.blue
-//        myButton.addTarget(
-//            self,
-//            action: #selector(ViewController.article),
-//            for: .touchUpInside)
-//        self.view.addSubview(myButton)
 
         // ---------------------------------------------------
 
@@ -91,8 +77,7 @@ class ViewController: UIViewController {
         // ---------------------------------------------------
 
         // 建立 UISearchController 並設置搜尋控制器為 nil
-        self.searchController =
-            UISearchController(searchResultsController: nil)
+        self.searchController = UISearchController(searchResultsController: nil)
 
         // 將更新搜尋結果的對象設為 self
         self.searchController.searchResultsUpdater = self
@@ -104,11 +89,10 @@ class ViewController: UIViewController {
 
         // 搜尋時是否使用燈箱效果 (會將畫面變暗以集中搜尋焦點)
         self.searchController
-            .dimsBackgroundDuringPresentation = false
+            .dimsBackgroundDuringPresentation = true
 
         // 搜尋框的樣式
-        self.searchController.searchBar.searchBarStyle =
-            .prominent
+        self.searchController.searchBar.searchBarStyle = .minimal
 
         // 設置搜尋框的尺寸為自適應
         // 因為會擺在 tableView 的 header

@@ -11,6 +11,7 @@ import UIKit
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
+
         if (self.searchController.isActive) {
             return self.searchArr.count
         } else {
@@ -24,7 +25,7 @@ extension ViewController: UITableViewDataSource {
             let cell =
                 tableView.dequeueReusableCell(
                     withIdentifier: "Cell", for: indexPath as IndexPath)
-            
+
             if (self.searchController.isActive) {
                 cell.textLabel?.text =
                     self.searchArr[indexPath.row]
