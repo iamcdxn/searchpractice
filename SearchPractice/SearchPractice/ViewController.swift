@@ -14,12 +14,12 @@ class ViewController: UIViewController {
     var searchController: UISearchController!
 
     let cities = [
-        "臺北市","新北市","桃園市","臺中市","臺南市",
-        "高雄市","基隆市","新竹市","嘉義市","新竹縣",
-        "苗栗縣","彰化縣","南投縣","雲林縣","嘉義縣",
-        "屏東縣","宜蘭縣","花蓮縣","臺東縣","澎湖縣",]
+        "臺北市", "新北市", "桃園市", "臺中市", "臺南市",
+        "高雄市", "基隆市", "新竹市", "嘉義市", "新竹縣",
+        "苗栗縣", "彰化縣", "南投縣", "雲林縣", "嘉義縣",
+        "屏東縣", "宜蘭縣", "花蓮縣", "臺東縣", "澎湖縣",]
 
-    var searchArr: [String] = [String](){
+    var searchArr: [String] = [String]() {
         didSet {
             // 重設 searchArr 後重整 tableView
             self.tableView.reloadData()
@@ -62,23 +62,23 @@ class ViewController: UIViewController {
         // 加到導覽列中
         self.navigationItem.rightBarButtonItem = rightButton
 
-        // 建立一個按鈕
-        let myButton = UIButton(frame: CGRect(
-            x: 0, y: 0, width: 120, height: 40))
-        myButton.setTitle("Article", for: .normal)
-        myButton.backgroundColor = UIColor.blue
-        myButton.addTarget(
-            self,
-            action: #selector(ViewController.article),
-            for: .touchUpInside)
-        self.view.addSubview(myButton)
+//        // 建立一個按鈕
+//        let myButton = UIButton(frame: CGRect(
+//            x: 0, y: 0, width: 120, height: 40))
+//        myButton.setTitle("Article", for: .normal)
+//        myButton.backgroundColor = UIColor.blue
+//        myButton.addTarget(
+//            self,
+//            action: #selector(ViewController.article),
+//            for: .touchUpInside)
+//        self.view.addSubview(myButton)
 
         // ---------------------------------------------------
 
         let fullScreenSize = UIScreen.main.bounds.size
 
         self.tableView = UITableView(frame: CGRect(
-            x: 0, y: 20,
+            x: 0, y: 0,
             width: fullScreenSize.width,
             height: fullScreenSize.height - 20),
                                      style: .plain)
