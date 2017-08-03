@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         "臺北市", "新北市", "桃園市", "臺中市", "臺南市",
         "高雄市", "基隆市", "新竹市", "嘉義市", "新竹縣",
         "苗栗縣", "彰化縣", "南投縣", "雲林縣", "嘉義縣",
-        "屏東縣", "宜蘭縣", "花蓮縣", "臺東縣", "澎湖縣",]
+        "屏東縣", "宜蘭縣", "花蓮縣", "臺東縣", "澎湖縣" ]
 
     var searchArr: [String] = [String]() {
         didSet {
@@ -84,8 +84,8 @@ class ViewController: UIViewController {
                                      style: .plain)
         self.tableView.register(UITableViewCell.self,
                                      forCellReuseIdentifier: "Cell")
-        self.tableView.delegate = self as? UITableViewDelegate
-        self.tableView.dataSource = self as? UITableViewDataSource
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         self.view.addSubview(self.tableView)
 
         // ---------------------------------------------------
@@ -95,7 +95,7 @@ class ViewController: UIViewController {
             UISearchController(searchResultsController: nil)
 
         // 將更新搜尋結果的對象設為 self
-        self.searchController.searchResultsUpdater = self as? UISearchResultsUpdating
+        self.searchController.searchResultsUpdater = self
 
         // 搜尋時是否隱藏 NavigationBar
         // 這個範例沒有使用 NavigationBar 所以設置什麼沒有影響
